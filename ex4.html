@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Object</h1>
+    <script>
+        var coworker = {
+            "programmer": "egoing",
+            "deginer": "leezche",
+            "bookkeeper": "duru"
+        };
+
+        coworker.showAll = function () {
+            for (var key in this) {
+                if(key != "showAll"){
+                document.write(this[key] + '<br>');
+                }
+            }
+        }
+        coworker.showAll();
+
+    </script>
+</body>
+
+</html>
